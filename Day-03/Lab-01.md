@@ -12,9 +12,8 @@ You are a Security Operations Analyst working at a company that implemented Micr
  In this lab, you will Understand the following:
  - Task 1: Create Sentinel Workspace
  - Task 2: Connect the Windows security event connector
- - Task 3: Enable Microsoft Defender for Cloud
- - Task 4: Save and modify a workbook template
- - Task 5: Create a Workbook
+ - Task 3: Save and modify a workbook template
+ - Task 4: Create a Workbook
 
 ### Task 1: Create Sentinel Workspace
 
@@ -70,8 +69,7 @@ In this task, you will create a Microsoft Sentinel workspace where you will be m
 
     ![](media/log-022.png) 
 
-1. Navigate to the left menu and go to the Content Management section, select **Content Hub (1)**. On the Content Hub page, search and select **Windows Security Events (2)** and then 
-   **Select (3)** it. Finally, click on **Install (4)** and Follow the same steps to install **Azure Activity**.
+1. Navigate to the left menu and go to the Content Management section, select **Content Hub (1)**. On the Content Hub page, search and select **Windows Security Events (2)** and then **Select (3)** it. Finally, click on **Install (4)** and Follow the same steps to install **Azure Activity**.
 
     ![Picture 1](media/ex-1-3.png)
 
@@ -87,23 +85,23 @@ In this task, you will create a Microsoft Sentinel workspace where you will be m
 
     ![Picture 1](media/ex-1-6.png) 
    
-8. In the configuration section, opt for **Install agent on Azure Windows Virtual Machine (1)**, and then choose **Download & Install agent for Azure Windows Virtual machines > (2)**.
+1. In the configuration section, opt for **Install agent on Azure Windows Virtual Machine (1)**, and then choose **Download & Install agent for Azure Windows Virtual machines > (2)**.
 
     ![Picture 1](media/lab02-task01-installagent.png) 
 
-9. Select the **svm-<inject key="DeploymentID" enableCopy="false" />** virtual machine and click on **Connect**.
+1. Select the **svm-<inject key="DeploymentID" enableCopy="false" />** virtual machine and click on **Connect**.
 
     ![Picture 1](media/lab2-task1-svm.png) 
         
-10. Once **Connected (1)**, select the **Virtual Machines (2)** link from the top.
+1. Once **Connected (1)**, select the **Virtual Machines (2)** link from the top.
 
     ![Picture 1](media/lab2-task1-svm1.png) 
 
-11. On the virtual machine page, select the **s2vm-<inject key="DeploymentID" enableCopy="false" />** virtual machine and click on **Connect**. Wait until get connected.
+1. On the virtual machine page, select the **s2vm-<inject key="DeploymentID" enableCopy="false" />** virtual machine and click on **Connect**. Wait until get connected.
 
     ![Picture 1](media/lab2-task1-s2vm.png)
 
-11. Then, come back to the configuration and scroll down a bit. You can find **Select which events to stream**. Click on **All Events**. Click on **Apply changes** now. If you refresh the data connector page, you can see the status Connected for **Security Events Via Legacy Agent**.
+1. Then, come back to the configuration and scroll down a bit. You can find **Select which events to stream**. Click on **All Events**. Click on **Apply changes** now. If you refresh the data connector page, you can see the status Connected for **Security Events Via Legacy Agent**.
 
     ![Picture 1](media/ex-1-7.png)
 
@@ -168,7 +166,7 @@ In this task, you will save the Microsoft Sentinel workbook templates.
 
 1. Close the workbook by selecting the **X** in the top-right corner.
 
-### Task 5: Create a Workbook
+### Task 4: Create a Workbook
 
 In this task, you will create a new workbook with advanced visualizations.
 
@@ -255,7 +253,7 @@ In this task, you will create a new workbook with advanced visualizations.
 
 1. On the right pane, select **View saved workbook** to review your workbook.
 
-    ![Picture 1](../ex-1-15.png)
+    ![Picture 1](media/ex-1-15.png)
 
 ### Conclusion
  Connecting data to Microsoft Sentinel enables you to monitor and visualize it using custom dashboards in Azure Monitor Workbooks, improving threat detection and response.
