@@ -1,4 +1,4 @@
-# Day 01 & 02: Streamline Management and Safegaurd endpoints
+# Day 01 & 02: Introduction and Deployment of Microsoft Defender for Endpoint
 
 ### Overall Estimated Duration: 72 Hours
 
@@ -89,7 +89,7 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 1. After completing the task, hit the **Validate** button under Validation tab integrated within your lab guide. If you receive a success message, you can proceed to the next task, if not, carefully read the error message and retry the step, following the instructions in the lab guide.
 
    ![Inline Validation](media/inline-validation1.png)
-   
+
 1. Click **"Next"** from the bottom right corner to embark on your Lab journey!
 
    ![Launch Azure Portal](media/page.png)
