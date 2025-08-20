@@ -197,9 +197,9 @@ In this task, your objective is to implement the Windows Intune security baselin
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:.
 > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-> - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
    
-<validation step="3b400ff6-0bc5-40f5-bed1-f54b4bc141e7" />  
+<validation step="55092f48-1e55-4402-9a71-887f7c82c36b" />  
 
 ## Summary
 

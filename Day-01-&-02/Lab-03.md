@@ -217,9 +217,9 @@ In this task, validate the simulated Drive-by URL attack to assess the vulnerabi
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:.
 > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-> - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-<validation step="9e1b1223-5416-4ec4-bbbd-18696c9e270e" />   
+<validation step="c32e4131-9d5c-4e01-a4b6-5f006288ee1d" />   
 
 ## Summary
 

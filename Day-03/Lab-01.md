@@ -52,6 +52,13 @@ In this task, you will create a Microsoft Sentinel workspace where you will be m
    
    ![Picture 1](media/ex-1-2.png)
 
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:.
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+   
+<validation step="334fdf37-4cce-4af9-ac55-73608002b9e6" />
+
 ### Task 2: Connect the Windows security event connector
 
 1. In the Search bar of the Azure portal, type **Microsoft Sentinel (1)**, then select **Microsoft Sentinel (2)**.
@@ -246,7 +253,7 @@ In this task, you will create a new workbook with advanced visualizations.
 
 1. On the right pane, select **View saved workbook** to review your workbook.
 
-    ![Picture 1](media/ex-1-15.png)
+    ![Picture 1](media/ex-1-15.png) 
 
 ### Conclusion
  Connecting data to Microsoft Sentinel enables you to monitor and visualize it using custom dashboards in Azure Monitor Workbooks, improving threat detection and response.
