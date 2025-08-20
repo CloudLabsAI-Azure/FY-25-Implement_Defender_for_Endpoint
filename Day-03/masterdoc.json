@@ -1,6 +1,6 @@
 [
   {
-    "Name": "SIEM with Microsoft Sentinel",
+    "Name": "Onboarding and configuring Devices",
     "Language": "English",
     "Files": [
       {
@@ -13,4 +13,5 @@
       }
     ]
   }
+
 ]
