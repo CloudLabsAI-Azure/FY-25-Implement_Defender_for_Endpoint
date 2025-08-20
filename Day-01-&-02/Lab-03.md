@@ -1,7 +1,5 @@
 # Lab 3- Endpoint Security and Attack Detection using Defender for Endpoint
 
-### Estimated Duration: 30 minutes
-
 ## Lab overview
 
 Participants will actively engage in configuring and launching a simulated Drive-by URL attack, gaining insights into the techniques and potential impact of such attacks. The lab aims to enhance participants' awareness of cyber threats and provide hands-on experience in validating the simulated attack.

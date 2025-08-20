@@ -1,7 +1,5 @@
 # Lab 4 - Microsoft Defender for Endpoint Incidents Management and Analysis
 
-## Estimated Duration: 90 minutes
-
 ## Lab overview
 
 This lab encompasses the end-to-end process of incident detection, alert generation, response actions, and live responses within an EDR framework. Participants will gain hands-on experience in managing security incidents from detection to resolution, utilizing the live response feature for real-time remediation.

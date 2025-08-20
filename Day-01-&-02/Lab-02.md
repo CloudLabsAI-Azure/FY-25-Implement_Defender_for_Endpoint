@@ -1,7 +1,5 @@
 # Lab 2 - Validating Endpoint Onboarding - Conducting a PowerShell Detection Test with Microsoft Defender for Endpoint
 
-## Estimated Duration: 60 minutes
-
 ## Lab overview
 
 Microsoft Defender for Endpoint and running detection tests to assess the responsiveness of the security service. Participants will actively engage in setting up and configuring Defender for Endpoint, understanding how to seamlessly integrate devices and evaluate their effectiveness in threat detection scenarios.

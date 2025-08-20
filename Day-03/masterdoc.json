@@ -4,12 +4,16 @@
     "Language": "English",
     "Files": [
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/FY-25-Implement_Defender_for_Endpoint/main/Day-03/Lab-01.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/FY-25-Implement_Defender_for_Endpoint/main/Day-03/Gettind-Started.md",
         "Order": 1
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/FY-25-Implement_Defender_for_Endpoint/main/Day-03/Lab-02.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/FY-25-Implement_Defender_for_Endpoint/main/Day-03/Lab-01.md",
         "Order": 2
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/FY-25-Implement_Defender_for_Endpoint/main/Day-03/Lab-02.md",
+        "Order": 3
       }
     ]
   }

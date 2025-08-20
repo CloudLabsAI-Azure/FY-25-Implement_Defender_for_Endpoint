@@ -1,17 +1,18 @@
-# SIEM with Microsoft Sentinel 
-**Overall Estimated Duration:** 60 minutes  
+# Day 03: Onboarding and configuring Devices
 
-## **Overview**  
+### Overall Estimated Duration: 4 Hours
+
+## Overview
 Microsoft Sentinel allows you to create custom workbooks across your data and comes with built-in workbook templates to allow you to quickly gain insights across your data as soon as you connect a data source.icrosoft Sentinel allows you to create custom workbooks across your data and comes with built-in workbook templates to allow you to quickly gain insights across your data as soon as you connect a data source.
 
-## **Objective**  
+## Objective
 By the end of this lab, participants will:  
 
 - **Configure Sentinel Workbooks and Detection Rules**: utilize Microsoft Sentinel to enhance security monitoring by creating workbooks and connecting relevant data sources. You'll start by setting up a Sentinel workspace and integrating security event connectors.
   
 - **Configure Detection Rules**: configuring detection rules in Microsoft Sentinel to identify and respond to potential security threats. You'll work with Log Analytics KQL queries to create custom analytics rules for detecting persistence and privilege elevation attacks. 
 
-## **Pre-requisites**  
+## Pre-requisites 
 Participants should meet the following prerequisites:  
 
 Here are 4-5 technical skills prerequisites for the "Configure Sentinel Workbooks and Detection Rules" labs:
@@ -21,14 +22,14 @@ Here are 4-5 technical skills prerequisites for the "Configure Sentinel Workbook
 1. **Azure Monitor Workbooks**: Understanding of Azure Monitor Workbooks and how to create custom dashboards and visualizations for security data in Microsoft Sentinel.
 
 
-## **Architecture**  
+## Architecture 
 In this hands-on lab, you will configure Microsoft Sentinel for security monitoring by setting up a workspace, and integrating Windows Security Event data. You'll also customize workbooks to visualize security data. Additionally, you'll create automated playbooks and configure detection rules for persistence and privilege escalation attacks.
 
 ## Architecture Diagram
 
   ![](media/arch04.png)
 
-## **Explanation of Components**  
+## Explanation of Components 
 The architecture for this lab involves the following key components:
 
 #### Lab 01

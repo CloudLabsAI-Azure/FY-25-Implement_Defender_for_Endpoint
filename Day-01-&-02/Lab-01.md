@@ -1,7 +1,5 @@
 # Lab 1 - Setting up the Microsoft Defender for Endpoint Environment
 
-### Estimated Duration: 30 minutes
-
 ## Lab overview
 
 In this lab, participants will immerse themselves in the practical implementation of Microsoft Defender for Endpoint. The primary goal is to equip participants with the skills and knowledge necessary to fortify the security infrastructure of organizational endpoints.
