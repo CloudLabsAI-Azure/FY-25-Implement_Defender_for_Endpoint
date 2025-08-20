@@ -1,6 +1,6 @@
 [
   {
-    "Name": "SIEM with Microsoft Sentinel",
+    "Name": "Introduction-and-Deployment-of-Microsoft-Defender-for-Endpoint",
     "Language": "English",
     "Files": [
       {
@@ -21,4 +21,5 @@
       }
     ]
   }
+
 ]
