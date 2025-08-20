@@ -113,7 +113,7 @@ In this task, you will save the Microsoft Sentinel workbook templates.
 
 1. In the Search bar of the Azure portal, type *Microsoft Sentinel*, then select **Microsoft Sentinel**.
 
-   ![Picture 1](media/image_7.png)
+    ![Picture 1](media/image_7.png)
 
 1. Select your Microsoft Sentinel Workspace.
 
