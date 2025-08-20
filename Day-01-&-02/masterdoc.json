@@ -1,0 +1,24 @@
+[
+  {
+    "Name": "SIEM with Microsoft Sentinel",
+    "Language": "English",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/FY-25-Implement_Defender_for_Endpoint/main/Day-01-&-02/Lab-01.md",
+        "Order": 1
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/FY-25-Implement_Defender_for_Endpoint/main/Day-01-&-02/Lab-02.md",
+        "Order": 2
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/FY-25-Implement_Defender_for_Endpoint/main/Day-01-&-02/Lab-03.md",
+        "Order": 3
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/FY-25-Implement_Defender_for_Endpoint/main/Day-01-&-02/Lab-04.md",
+        "Order": 4
+      }
+    ]
+  }
+]

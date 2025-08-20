@@ -1,4 +1,4 @@
-# Lab 6 - Validating Endpoint Onboarding - Conducting a PowerShell Detection Test with Microsoft Defender for Endpoint
+# Lab 2 - Validating Endpoint Onboarding - Conducting a PowerShell Detection Test with Microsoft Defender for Endpoint
 
 ## Estimated Duration: 60 minutes
 

@@ -1,4 +1,4 @@
-# Lab 8- Endpoint Security and Attack Detection using Defender for Endpoint
+# Lab 3- Endpoint Security and Attack Detection using Defender for Endpoint
 
 ### Estimated Duration: 30 minutes
 

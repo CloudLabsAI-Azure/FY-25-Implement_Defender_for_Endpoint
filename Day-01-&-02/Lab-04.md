@@ -1,4 +1,4 @@
-# Lab 9 - Microsoft Defender for Endpoint Incidents Management and Analysis
+# Lab 4 - Microsoft Defender for Endpoint Incidents Management and Analysis
 
 ## Estimated Duration: 90 minutes
 

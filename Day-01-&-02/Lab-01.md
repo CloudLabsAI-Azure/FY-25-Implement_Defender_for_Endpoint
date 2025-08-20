@@ -1,4 +1,4 @@
-# Lab 5 - Setting up the Microsoft Defender for Endpoint Environment
+# Lab 1 - Setting up the Microsoft Defender for Endpoint Environment
 
 ### Estimated Duration: 30 minutes
 
