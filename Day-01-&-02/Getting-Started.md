@@ -60,7 +60,7 @@ Ensure you have access to all required tools, account and carefully read each ta
  
 Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
 
-   ![](media/env.png)
+   ![](media/vm-01.png)
 
 ## Virtual Machine & Lab Guide
  
@@ -76,13 +76,13 @@ To get a better understanding of your lab resources and credentials, navigate to
  
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
  
- ![Use the Split Window Feature](media/split.png)
+ ![Use the Split Window Feature](media/vm-03.png)
  
 ## Managing Your Virtual Machine
  
 Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
  
-![Manage Your Virtual Machine](media/resources.png)
+![Manage Your Virtual Machine](media/vm-02.png)
 
 ## Lab Validation
 
@@ -92,7 +92,7 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 
 1. Click **"Next"** from the bottom right corner to embark on your Lab journey!
 
-   ![Launch Azure Portal](media/page.png)
+   ![Launch Azure Portal](media/vm-04.png)
 
 ## Support Contact
 
