@@ -1,6 +1,6 @@
 # Day 01 & 02: Introduction and Deployment of Microsoft Defender for Endpoint
 
-### Overall Estimated Duration: 72 Hours
+### Overall Estimated Duration: 4 Hours
 
 ## Overview
 
