@@ -1,4 +1,4 @@
-# Lab 01 - Configure Sentinel Workbooks and Detection Rules
+# Lab 1 - Configure Sentinel Workbooks and Detection Rules
 
 ## Exercise 1: Configure Sentinel Workbooks
 
