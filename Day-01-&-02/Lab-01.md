@@ -113,9 +113,7 @@ In this task, you will configure device groups that allow for access control and
 
     >**Note:** If you do not see the **Endpoints** option, log out by selecting the top-right circle with your account initials and choose **Sign Out**. Open the page in private mode (InPrivate) and afterwards, log in again using the **Tenant Email** credentials or other options to consider are refreshing the page. It might take 10-15 minutes to reflect the option on portal. Try refreshing the page multiple times until the option appears.
 
-1. Select **Device groups (2)** under the permissions area.
-
-1. Select **+ Add device group (3)** icon.
+1. Select **Settings (1)** from the left navigation menu, under **Permissions** choose **Device groups (2)**, and then on the **Endpoints** page click **+ Add device group (3)**.
 
     ![Picture 1](media/devicegroup.png)    
 
@@ -124,7 +122,7 @@ In this task, you will configure device groups that allow for access control and
       |General setting|Value|
       |---|---|
       |Device group name|**Regular (1)**|
-      |Remediation level| **Full-remediate threats automatically (2)**|
+      |Remediation level| **Full remediation  (2)**|
  
     ![Picture 1](media/L1-T3-S3.png)
 
