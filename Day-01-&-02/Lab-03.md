@@ -67,7 +67,7 @@ In this task, simulated attacks can help you identify and find vulnerable users 
     - Description: **This payload is for Drive-by URL threats offering free prizes and gifts that are too good to be true (2)**
     - Select **Next (3)**.
 
-   ![Picture 1](media/L4-T1-S9.png)
+      ![Picture 1](media/L4-T1-S9.png)
 
 1. On the **Configure Payload** page, enter the following information:
 
