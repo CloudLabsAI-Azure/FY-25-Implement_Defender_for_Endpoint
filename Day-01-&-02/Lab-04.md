@@ -59,30 +59,30 @@ When you investigate an incident, you'll see:
 
 3. Here are the detailed information on the tabs:
 
-    - **Attack story**:- 
+    - **Attack story**
 
-    - Attack stories help you to quickly review, investigate, and remediate attacks while viewing the full story of the attack on the same tab. It also allows you to review the entity details and take remediation actions, such as deleting a file or isolating a device without losing context. Within the attack story you can find the alert page and the incident graph. The incident alert page has these sections:- Alert story, which includes: What happened, Actions taken, Related events, and Alert properties in the right pane (state, details, description, and others).
+        - Attack stories help you to quickly review, investigate, and remediate attacks while viewing the full story of the attack on the same tab. It also allows you to review the entity details and take remediation actions, such as deleting a file or isolating a device without losing context. Within the attack story you can find the alert page and the incident graph. The incident alert page has these sections:- Alert story, which includes: What happened, Actions taken, Related events, and Alert properties in the right pane (state, details, description, and others).
     
-      >**Note:** Note that not every alert will have all of the listed subsections in the Alert story section.
+            >**Note:** Note that not every alert will have all of the listed subsections in the Alert story section.
 
-      ![Picture 1](media/lab03-task02-attackstory.png)   
+            ![Picture 1](media/lab03-task02-attackstory.png)   
 
-    - **Alert**:- 
+    - **Alert** 
 
-    - On the Alerts tab, you can view the alert queue for alerts related to the incident and other information about them such as:
+        - On the Alerts tab, you can view the alert queue for alerts related to the incident and other information about them such as:
 
-        - Severity.
-        - The entities that were involved in the alert.
-        - The source of the alerts (Microsoft Defender for Identity, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Defender for Cloud Apps, and the app governance add-on).
-        - The reason they were linked together.
+            - Severity.
+            - The entities that were involved in the alert.
+            - The source of the alerts (Microsoft Defender for Identity, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Defender for Cloud Apps, and the app governance add-on).
+            - The reason they were linked together.
 
-           ![Picture 1](media/L5-T2-S3.png)
+                ![Picture 1](media/L5-T2-S3.png)
 
-        - For example, By default, the alerts are ordered chronologically to allow you to see how the attack played out over time. When you select an alert within an incident, Microsoft Defender displays the alert information specific to the context of the overall incident. You can see the events of the alert, which other triggered alerts caused the current alert, and all the affected entities and activities involved in the attack, including devices, files, users, and mailboxes.
+            - For example, By default, the alerts are ordered chronologically to allow you to see how the attack played out over time. When you select an alert within an incident, Microsoft Defender displays the alert information specific to the context of the overall incident. You can see the events of the alert, which other triggered alerts caused the current alert, and all the affected entities and activities involved in the attack, including devices, files, users, and mailboxes.
 
-            ![Picture 1](media/lab03-task02-alertsstory.png)  
+                ![Picture 1](media/lab03-task02-alertsstory.png)  
 
-    - **Assets**:- 
+    - **Assets** 
 
         - Easily view and manage all your assets in one place with the new **Assets** tab. This unified view includes Devices, Users, Mailboxes and Apps.
 
@@ -90,7 +90,7 @@ When you investigate an incident, you'll see:
 
             ![Picture 1](media/L5-T2-S5.png) 
 
-    - **Devices**:- 
+    - **Devices**
 
         - The **Devices** view lists all the devices related to the incident. Here's an example.
                 
@@ -104,7 +104,7 @@ When you investigate an incident, you'll see:
 
             >**Note:** Go back to the **Assets** tab page.
         
-    - **Users**:- 
+    - **Users**
             
         - The Users view lists all the users that have been identified to be part of or related to the incident. Here's an example.
 
@@ -112,45 +112,43 @@ When you investigate an incident, you'll see:
 
         - You can select the check mark for a user to see details of the user account threat, exposure, and contact information. Select the user name to see additional user account details.
 
-    - **Mailboxes**:- 
+    - **Mailboxes** 
 
         - The Mailboxes view lists all the mailboxes that have been identified to be part of or related to the incident.
 
-    - **Apps**:- 
+    - **Apps**
 
         - The Apps view lists all the apps identified to be part of or related to the incident. Here's an example.
 
-    - **Investigations**:- 
+    - **Investigations**
 
-    - The **Investigations** tab lists all the automated investigations triggered by alerts in this incident. Automated investigations will perform remediation actions or wait for analyst approval of actions, depending on how you configured your automated investigations to run in Defender for Endpoint and Defender for Office 365
+        - The **Investigations** tab lists all the automated investigations triggered by alerts in this incident. Automated investigations will perform remediation actions or wait for analyst approval of actions, depending on how you configured your automated investigations to run in Defender for Endpoint and Defender for Office 365
 
-        >**Note:** Investigations may not be visible or apparent.
+            >**Note:** Investigations may not be visible or apparent.
 
-       ![Picture 1](media/L5-T2-S9.png) 
+            ![Picture 1](media/L5-T2-S9.png) 
 
-    - Select an investigation to navigate to its details page for full information on the investigation and remediation status.
+        - Select an investigation to navigate to its details page for full information on the investigation and remediation status.
 
-    - There is also an Investigation graph tab that shows:
+        - There is also an Investigation graph tab that shows:
 
-        - The connection of alerts to the impacted assets in your organization.
-        - Which entities are related to which alerts and how they are part of the story of the attack?
-        - The alerts for the incident.
+            - The connection of alerts to the impacted assets in your organization.
+            - Which entities are related to which alerts and how they are part of the story of the attack?
+            - The alerts for the incident.
 
-    - The investigation graph helps you quickly understand the full scope of the attack by connecting the different suspicious entities that are part of the attack with their related assets such as users, devices, and mailboxes.
+        - The investigation graph helps you quickly understand the full scope of the attack by connecting the different suspicious entities that are part of the attack with their related assets such as users, devices, and mailboxes.
 
-        >**Note:** Go back to the **Investigations** tab, page.
+            >**Note:** Go back to the **Investigations** tab, page.
 
-    - **Evidence and Response**:- 
+    - **Evidence and Response**
 
-    - The Evidence and Response tab shows all the supported events and suspicious entities in the alerts in the incident. Here's an example.
+        - The Evidence and Response tab shows all the supported events and suspicious entities in the alerts in the incident. Here's an example.
 
-        ![Picture 1](media/L5-T2-S10.png)  
+            ![Picture 1](media/L5-T2-S10.png)  
 
-    - Microsoft Defender automatically investigates all the incidents' supported events and suspicious entities in the alerts, providing you with information about important emails, files, processes, services, IP Addresses, and more. This helps you quickly detect and block potential threats in the incident.
+        - Microsoft Defender automatically investigates all the incidents' supported events and suspicious entities in the alerts, providing you with information about important emails, files, processes, services, IP Addresses, and more. This helps you quickly detect and block potential threats in the incident.
 
-    - Each of the analyzed entities is marked with a verdict (Malicious, Suspicious, Clean) and a remediation status. This helps you understand the remediation status of the entire incident and what next steps can be taken.
-
-     
+        - Each of the analyzed entities is marked with a verdict (Malicious, Suspicious, Clean) and a remediation status. This helps you understand the remediation status of the entire incident and what next steps can be taken.
 
 4. To continue the investigation, select the **Alerts** tab, and select any one alert. It will open detailed information about the alert.               
 
@@ -161,6 +159,7 @@ When you investigate an incident, you'll see:
 6. Select **Open file page**, to drill into it and continue with the investigation. The file page provides incredible details about an executable file. 
 
    ![Picture 1](media/filepage.png)
+   
 7. The **Overview (1)** tab provides the same information as the file side pane did. 
 
     - The **Incidents & alerts (2)** tab goes on to show all the alerts associated with this file. 

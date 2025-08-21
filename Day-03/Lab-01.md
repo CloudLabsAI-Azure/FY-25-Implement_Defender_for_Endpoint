@@ -115,56 +115,57 @@ In this task, you will save the Microsoft Sentinel workbook templates.
 
     ![Picture 1](media/image_7.png)
 
-1. Select your Microsoft Sentinel Workspace.
+2. Select your Microsoft Sentinel Workspace.
 
     ![Picture 1](media/log-022.png)
 
-1. Select **Workbooks (1)** under the *Threat Management* left blade, and select **Click here to go to the Defender portal (2)**. It will redirect you to the defender portal.
+3. Select **Workbooks (1)** under the *Threat Management* left blade, and select **Click here to go to the Defender portal (2)**. It will redirect you to the defender portal.
 
    ![Picture 1](media/log090.png)
 
-1. Select the **Templates (1)** tab, search and select the **Azure Activity (2)** template workbook.
+4. Select the **Templates (1)** tab, search and select the **Azure Activity (2)** template workbook.
 
    ![Picture 1](media/log100-01.png)
 
-1. Scroll down again and select the **Save** button for the *Azure Activity* workbook. 
+5. Scroll down again and select the **Save** button for the *Azure Activity* workbook. 
 
-1. Leave **East US** as the default value for *Region* and select **Yes**.
+6. Leave **East US** as the default value for *Region* and select **Yes**.
 
-1. Select the **View saved workbook** button.
+7. Select the **View saved workbook** button.
 
    ![Picture 1](media/log-1090.png)
 
-1. On the top select **Open in Azure**.
+8. On the top select **Open in Azure**.
 
     ![Picture 1](media/log-10090.png)
 
-1. Select **Edit** in the command bar to enable changes in the workbook.
+9. Select **Edit** in the command bar to enable changes in the workbook.
 
-1. Scroll down to the **Caller activities** area, and look at the color of the *Activities* column since we are going to format those columns. Select the **Edit** button below the grid and select the **ellipsis (...) > +Add > Add query**.
+10. Scroll down to the **Caller activities** area, and look at the color of the *Activities* column since we are going to format those columns. Select the **Edit** button below the grid and select the **ellipsis (...) > +Add > Add query**.
 
-   ![Picture 1](media/editcaller.png)
+    ![Picture 1](media/editcaller.png)
 
-   ![Picture 1](media/ex-1-11.png)
+    ![Picture 1](media/ex-1-11.png)
 
-1.  Type **SecurityEvent (1)** into the query box and click on **Run Query (2)** then select the **Column Settings (3)** button, which appears after clicking the **Run Query** button. 
-    **Hint:**  This button only appears  if there  is data from the KQL query.
+11.  Type **SecurityEvent (1)** into the query box and click on **Run Query (2)** then select the **Column Settings (3)** button, which appears after clicking the **Run Query** button. 
+    
+        >**Hint:**  This button only appears  if there  is data from the KQL query.
 
-    ![Picture 1](media/updateu.png)
+        ![Picture 1](media/updateu.png)
    
-1. In the *Edit column settings* blade that appears, within *Columns* select **Activity(1)**.
+12. In the *Edit column settings* blade that appears, within *Columns* select **Activity (1)**.
 
-1. Change the value for *Column renderer* to **Heatmap(2)**. For *Colour palette*, scroll down to select **32-color categorical(3)**.
+13. Change the value for *Column renderer* to **Heatmap (2)**. For *Colour palette*, scroll down to select **32-color categorical (3)**.
 
-1. Select **Save and Close(4)**. Notice the change in the *Activities* column.
+14. Select **Save and Close (4)**. Notice the change in the *Activities* column.
 
-   ![Picture 1](media/ex-1-13.png)
+    ![Picture 1](media/ex-1-13.png)
 
-1. Select **Done Editing** at the bottom of the query (not the top menu).
+15. Select **Done Editing** at the bottom of the query (not the top menu).
 
-1. Now select **Done Editing** at the top menu and select the **Save** icon. 
+16. Now select **Done Editing** at the top menu and select the **Save** icon. 
 
-1. Close the workbook by selecting the **X** in the top-right corner.
+17. Close the workbook by selecting the **X** in the top-right corner.
 
 ### Task 4: Create a Workbook
 
@@ -176,82 +177,82 @@ In this task, you will create a new workbook with advanced visualizations.
 
     >**Note:** Although it is a new workbook, a startup template is used.
 
-1. To edit the workbook, select **Edit**.
+2. To edit the workbook, select **Edit**.
 
     ![Picture 1](media/lab16-image2.png)
 
-1. Select the **Edit** button below the new workbook overview of the workbook.
+3. Select the **Edit** button below the new workbook overview of the workbook.
 
    ![Picture 1](media/lab16-image3.png)
 
-1. Type *# My workbook* in a new line on top of *## New workbook* and select **Done Editing** on the bottom of this section, *Editing text item: text - 2*. Notice that 
+4. Type *# My workbook* in a new line on top of *## New workbook* and select **Done Editing** on the bottom of this section, *Editing text item: text - 2*. Notice that 
    your header increased in size and name changed.
 
     ![Picture 1](media/lab16-image4.png)
 
-1. Select **Edit** below the only visible bar chart graph.
+5. Select **Edit** below the only visible bar chart graph.
 
     ![Picture 1](media/lab16-image5.png)
 
-1. Review the KQL statement that provides a *union* statement of counts across all tables.
+6. Review the KQL statement that provides a *union* statement of counts across all tables.
 
-1. Scroll down and select the **Done Editing** on the bottom menu, for the *Editing query item: query - 2*.
+7. Scroll down and select the **Done Editing** on the bottom menu, for the *Editing query item: query - 2*.
 
-1. Select the ellipsis **...** next to the *Edit* button of the bar chart graph, then select **+ Add**, then select **Add query**.
+8. Select the ellipsis **...** next to the *Edit* button of the bar chart graph, then select **+ Add**, then select **Add query**.
 
     ![Picture 1](media/lab16-image6.png)
 
-1. Type **SecurityEvent** into the query box.
+9. Type **SecurityEvent** into the query box.
 
     ![Picture 1](media/lab16-image7.png)
   
-1. Change the *Time Range* to **Last hour(1)** and  *Visualization* to **Time chart(2)** and select the **Style(3)** tab from the query's command bar.
+10. Change the *Time Range* to **Last hour(1)** and  *Visualization* to **Time chart(2)** and select the **Style(3)** tab from the query's command bar.
 
-   ![Picture 1](media/lab16-image8.png)
+    ![Picture 1](media/lab16-image8.png)
 
-1. Select the **Make this item a custom width** box and set the *Percent width* to **25** and *Maximum width* to **25**.
+11. Select the **Make this item a custom width** box and set the *Percent width* to **25** and *Maximum width* to **25**.
 
     ![Picture 1](media/lab16-image9.png)
 
-1. Now select **Advanced Settings(1)** tab from the query's command bar and select **Show refresh icon when not editing(2)** box, scroll down and select **Done Editing(3)** on the bottom menu, 
+12. Now select **Advanced Settings(1)** tab from the query's command bar and select **Show refresh icon when not editing(2)** box, scroll down and select **Done Editing(3)** on the bottom menu, 
 
     ![Picture 1](media/lab16-image10.png)
 
-1. Scroll down and at the bottom of the workbook select **+ Add**, then **Add query**.
+13. Scroll down and at the bottom of the workbook select **+ Add**, then **Add query**.
 
     ![Picture 1](media/addquery.png)
 
-1. Type **SecurityEvent** into the query box.
+14. Type **SecurityEvent** into the query box.
 
-1. Change the *Time Range* to **Last hour (1)**.
+15. Change the *Time Range* to **Last hour (1)**.
 
-1. Change the *Visualization* to **Grid (2)**.
+16. Change the *Visualization* to **Grid (2)**.
 
-   ![Picture 1](media/grid.png)
+    ![Picture 1](media/grid.png)
 
-1. Select **Style** from the query's command bar.
+17. Select **Style** from the query's command bar.
 
-1. Select **Make this item a custom width** box.
+18. Select **Make this item a custom width** box.
 
-1. Set the *Percent width* to **75** and *Maximum width* to **75**.
+19. Set the *Percent width* to **75** and *Maximum width* to **75**.
 
-   ![Picture 1](media/75.png)
+    ![Picture 1](media/75.png)
 
-1. Scroll down and select **Done Editing** on the bottom menu, for the new *Editing query item: query - 3*.
+20. Scroll down and select **Done Editing** on the bottom menu, for the new *Editing query item: query - 3*.
 
-1. Select **Done Editing** in Workbook's top command bar.
+21. Select **Done Editing** in Workbook's top command bar.
 
-1. Select the **Save** icon, change the *Title* to **My Workbook** and Select **sentinel-rg** resource group, click on **Apply** to commit the changes. 
+22. Select the **Save** icon, change the *Title* to **My Workbook** and Select **sentinel-rg** resource group, click on **Apply** to commit the changes. 
  
     ![Picture 1](media/lab16-image11.png)
 
-1. Close the workbook by selecting the **X** at the top-right or select **Workbooks** in the Microsoft Sentinel portal.
+23. Close the workbook by selecting the **X** at the top-right or select **Workbooks** in the Microsoft Sentinel portal.
 
-1. Back in the *Workbooks* page, select the **My workbooks** tab.
+24. Back in the *Workbooks* page, select the **My workbooks** tab.
 
-1. Select the workbook you just created, **My workbook**.
+25. Select the workbook you just created, **My workbook**.
 
-1. On the right pane, select **View saved workbook** to review your workbook.
+26. On the right pane, select **View saved workbook** to review your workbook.
 
     ![Picture 1](media/ex-1-15.png) 
 
