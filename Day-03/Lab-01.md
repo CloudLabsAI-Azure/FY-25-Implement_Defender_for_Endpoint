@@ -159,7 +159,7 @@ In this task, you will save the Microsoft Sentinel workbook templates.
 
 14. Select **Save and Close (4)**. Notice the change in the *Activities* column.
 
-    ![Picture 1](media/ex-1-13.png)
+     ![Picture 1](media/ex-1-13.png)
 
 15. Select **Done Editing** at the bottom of the query (not the top menu).
 
@@ -183,7 +183,7 @@ In this task, you will create a new workbook with advanced visualizations.
 
 3. Select the **Edit** button below the new workbook overview of the workbook.
 
-   ![Picture 1](media/lab16-image3.png)
+    ![Picture 1](media/lab16-image3.png)
 
 4. Type *# My workbook* in a new line on top of *## New workbook* and select **Done Editing** on the bottom of this section, *Editing text item: text - 2*. Notice that 
    your header increased in size and name changed.
@@ -208,19 +208,19 @@ In this task, you will create a new workbook with advanced visualizations.
   
 10. Change the *Time Range* to **Last hour(1)** and  *Visualization* to **Time chart(2)** and select the **Style(3)** tab from the query's command bar.
 
-    ![Picture 1](media/lab16-image8.png)
+     ![Picture 1](media/lab16-image8.png)
 
 11. Select the **Make this item a custom width** box and set the *Percent width* to **25** and *Maximum width* to **25**.
 
-    ![Picture 1](media/lab16-image9.png)
+     ![Picture 1](media/lab16-image9.png)
 
 12. Now select **Advanced Settings(1)** tab from the query's command bar and select **Show refresh icon when not editing(2)** box, scroll down and select **Done Editing(3)** on the bottom menu, 
 
-    ![Picture 1](media/lab16-image10.png)
+     ![Picture 1](media/lab16-image10.png)
 
 13. Scroll down and at the bottom of the workbook select **+ Add**, then **Add query**.
 
-    ![Picture 1](media/addquery.png)
+     ![Picture 1](media/addquery.png)
 
 14. Type **SecurityEvent** into the query box.
 
@@ -228,7 +228,7 @@ In this task, you will create a new workbook with advanced visualizations.
 
 16. Change the *Visualization* to **Grid (2)**.
 
-    ![Picture 1](media/grid.png)
+     ![Picture 1](media/grid.png)
 
 17. Select **Style** from the query's command bar.
 
@@ -236,7 +236,7 @@ In this task, you will create a new workbook with advanced visualizations.
 
 19. Set the *Percent width* to **75** and *Maximum width* to **75**.
 
-    ![Picture 1](media/75.png)
+     ![Picture 1](media/75.png)
 
 20. Scroll down and select **Done Editing** on the bottom menu, for the new *Editing query item: query - 3*.
 
@@ -244,7 +244,7 @@ In this task, you will create a new workbook with advanced visualizations.
 
 22. Select the **Save** icon, change the *Title* to **My Workbook** and Select **sentinel-rg** resource group, click on **Apply** to commit the changes. 
  
-    ![Picture 1](media/lab16-image11.png)
+     ![Picture 1](media/lab16-image11.png)
 
 23. Close the workbook by selecting the **X** at the top-right or select **Workbooks** in the Microsoft Sentinel portal.
 
@@ -254,7 +254,7 @@ In this task, you will create a new workbook with advanced visualizations.
 
 26. On the right pane, select **View saved workbook** to review your workbook.
 
-    ![Picture 1](media/ex-1-15.png) 
+     ![Picture 1](media/ex-1-15.png) 
 
 ### Conclusion
  Connecting data to Microsoft Sentinel enables you to monitor and visualize it using custom dashboards in Azure Monitor Workbooks, improving threat detection and response.
