@@ -121,11 +121,11 @@ In this task, you will save the Microsoft Sentinel workbook templates.
 
 3. Select **Workbooks (1)** under the *Threat Management* left blade, and select **Click here to go to the Defender portal (2)**. It will redirect you to the defender portal.
 
-   ![Picture 1](media/log090.png)
+    ![Picture 1](media/log090.png)
 
 4. Select the **Templates (1)** tab, search and select the **Azure Activity (2)** template workbook.
 
-   ![Picture 1](media/log100-01.png)
+    ![Picture 1](media/log100-01.png)
 
 5. Scroll down again and select the **Save** button for the *Azure Activity* workbook. 
 
@@ -133,7 +133,7 @@ In this task, you will save the Microsoft Sentinel workbook templates.
 
 7. Select the **View saved workbook** button.
 
-   ![Picture 1](media/log-1090.png)
+    ![Picture 1](media/log-1090.png)
 
 8. On the top select **Open in Azure**.
 
@@ -143,9 +143,9 @@ In this task, you will save the Microsoft Sentinel workbook templates.
 
 10. Scroll down to the **Caller activities** area, and look at the color of the *Activities* column since we are going to format those columns. Select the **Edit** button below the grid and select the **ellipsis (...) > +Add > Add query**.
 
-    ![Picture 1](media/editcaller.png)
+     ![Picture 1](media/editcaller.png)
 
-    ![Picture 1](media/ex-1-11.png)
+     ![Picture 1](media/ex-1-11.png)
 
 11.  Type **SecurityEvent (1)** into the query box and click on **Run Query (2)** then select the **Column Settings (3)** button, which appears after clicking the **Run Query** button. 
     
