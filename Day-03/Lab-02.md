@@ -151,37 +151,37 @@ In this task, you will create a detection for the second attack of the previous 
 
    ![VMrdp](media/vm.png)
 
-2. Select the virtual machine **s2vm-<inject key="DeploymentID" enableCopy="false" />** from the list.
+1. Select the virtual machine **s2vm-<inject key="DeploymentID" enableCopy="false" />** from the list.
    
    ![VMrdp](media/vm11.png)
 
-3. At the beginning of the virtual machine page, click on **Connect (1)**, and from the drop-down select **Connect (2)**.
+1. At the beginning of the virtual machine page, click on **Connect (1)**, and from the drop-down select **Connect (2)**.
 
    ![VMrdp](media/vm2.png)
 
-4. On the Connect to Virtual Machine page, from Native  RDP, Choose the option to **Download RDP File.** If under downloads tab, if prompted to choose Keep or delete. Choose **Keep**.
+1. On the Connect to Virtual Machine page, from Native  RDP, Choose the option to **Download RDP File.** If under downloads tab, if prompted to choose Keep or delete. Choose **Keep**.
 
-5. Open the downloaded RDP file from the downloads.
+1. Open the downloaded RDP file from the downloads.
 
    ![VMrdp](media/vm4.png)
 
-6. Select **Connect** when prompted. You will get a warning that the .rdp file is from an unknown publisher. This is expected. In the Remote Desktop Connection window, select Connect to continue.
+1. Select **Connect** when prompted. You will get a warning that the .rdp file is from an unknown publisher. This is expected. In the Remote Desktop Connection window, select Connect to continue.
 
    ![VMrdp](media/vm8.png)
    
-7. In the Windows Security window, select More Choices and then Use a different account. Enter **Username:** <inject key="Labvm Admin Username"></inject> and **Password:** <inject key="Labvm Admin Password"></inject> and then select **OK**.
+1. In the Windows Security window, select More Choices and then Use a different account. Enter **Username:** <inject key="Labvm Admin Username"></inject> and **Password:** <inject key="Labvm Admin Password"></inject> and then select **OK**.
 
    ![VMrdp](media/vm6.png)
 
-8. Select **Yes** to verify the identity of the virtual machine and finish logging on.
+1. Select **Yes** to verify the identity of the virtual machine and finish logging on.
 
     ![VMrdp](media/vm7.png)
 
-9. You should now be connected to the virtual machine via Remote Desktop.
+1. You should now be connected to the virtual machine via Remote Desktop.
 
-10. In the search of the taskbar of your **s2vm-<inject key="DeploymentID" enableCopy="false" />** VM, enter *Command*. A Command Prompt will be displayed in the search results. Right-click on the Command Prompt and select **Run as Administrator**. Select **Yes** in the User Account Control window that allows the app to run.
+1. In the search of the taskbar of your **s2vm-<inject key="DeploymentID" enableCopy="false" />** VM, enter *Command*. A Command Prompt will be displayed in the search results. Right-click on the Command Prompt and select **Run as Administrator**. Select **Yes** in the User Account Control window that allows the app to run.
 
-11. In the Command Prompt, create a Temp folder in the root directory. Remember to press Enter after the last row:
+1. In the Command Prompt, create a Temp folder in the root directory. Remember to press Enter after the last row:
 
     ```CommandPrompt
     cd \
@@ -195,7 +195,7 @@ In this task, you will create a detection for the second attack of the previous 
 
     >**Note:** If you get result, Subdirectory or file temp already exists while running **mkdir temp** command then delete the temp file from C: path.
 
-12. Copy and run this command to simulate the creation of an Admin account. Remember to press Enter after the last row:
+1. Copy and run this command to simulate the creation of an Admin account. Remember to press Enter after the last row:
 
     ```CommandPrompt
     net user theusernametoadd /add
@@ -207,16 +207,16 @@ In this task, you will create a detection for the second attack of the previous 
     net localgroup administrators theusernametoadd /add
     ```
 
-13. Minimize the **s2vm-<inject key="DeploymentID" enableCopy="false" />** VM. On the Lab-VM, in the Microsoft Sentinel portal, select **Logs** from the General section in case you navigated away from this page.
+1. Minimize the **s2vm-<inject key="DeploymentID" enableCopy="false" />** VM. On the Lab-VM, in the Microsoft Sentinel portal, select **Logs** from the General section in case you navigated away from this page.
 
-14. **Run** the following KQL Statement to identify any entry that refers to administrators:
+1. **Run** the following KQL Statement to identify any entry that refers to administrators:
 
     ```KQL
     search "administrators" 
     | summarize count() by $table
     ```
 
-15. The result might show events from different tables, but in our case, we want to investigate the SecurityEvent table. The EventID and Event that we are looking is "4732 - A member was added to a security-enabled local group". With this, we will identify adding a member to a privileged group. **Run** the following KQL query to confirm:
+1. The result might show events from different tables, but in our case, we want to investigate the SecurityEvent table. The EventID and Event that we are looking is "4732 - A member was added to a security-enabled local group". With this, we will identify adding a member to a privileged group. **Run** the following KQL query to confirm:
 
     ```KQL
     SecurityEvent 
@@ -226,7 +226,7 @@ In this task, you will create a detection for the second attack of the previous 
 
     ![Lab overview.](media/ex-1-255.png)
 
-16. Expand the row to see all the columns related to the record. The username of the account added as Administrator does not show. The issue is that instead of storing the username, we have the Security IDentifier (SID). **Run** the following KQL to match the SID to the username that was added to the Administrators group:
+1. Expand the row to see all the columns related to the record. The username of the account added as Administrator does not show. The issue is that instead of storing the username, we have the Security IDentifier (SID). **Run** the following KQL to match the SID to the username that was added to the Administrators group:
 
     ```KQL
     SecurityEvent 
@@ -241,7 +241,7 @@ In this task, you will create a detection for the second attack of the previous 
 
     ![Screenshot](media/SC200_sysmon_attack3.png)
 
-17. Extend the row to show the resulting columns, in the last one, we see the name of the added user under the *UserName1* column we *project* within the KQL query. It is important to help the Security Operations Analyst by providing as much context about the alert as you can. This includes projecting Entities for use in the investigation graph. **Run** the following query:
+1. Extend the row to show the resulting columns, in the last one, we see the name of the added user under the *UserName1* column we *project* within the KQL query. It is important to help the Security Operations Analyst by providing as much context about the alert as you can. This includes projecting Entities for use in the investigation graph. **Run** the following query:
 
     ```KQL
     SecurityEvent 
@@ -255,9 +255,9 @@ In this task, you will create a detection for the second attack of the previous 
     | extend timestamp = TimeGenerated, HostCustomEntity = Computer, AccountCustomEntity = UserName1
     ```
 
-18. Now that you have a good detection rule, in the Logs window, select **+ New alert rule** in the command bar and then select **Create Microsoft Sentinel alert**. **Hint:** You might need to select the ellipsis (...) button in the command bar.
+1. Now that you have a good detection rule, in the Logs window, select **+ New alert rule** in the command bar and then select **Create Microsoft Sentinel alert**. **Hint:** You might need to select the ellipsis (...) button in the command bar.
 
-19. This starts the "Analytics rule wizard". For the *General* tab type:
+1. This starts the "Analytics rule wizard". For the *General* tab type:
 
     |Setting|Value|
     |---|---|
@@ -268,11 +268,11 @@ In this task, you will create a detection for the second attack of the previous 
 
     ![Screenshot](media/ex-1-29.png)
 
-20. Select **Next: Set rule logic (5) >** button. 
+1. Select **Next: Set rule logic (5) >** button. 
 
-21. On the *Set rule logic* tab, the *Rule query* should be populated already with your KQL query, as well the entities under **Alert enhancement** > **Entity mapping**.
+1. On the *Set rule logic* tab, the *Rule query* should be populated already with your KQL query, as well the entities under **Alert enhancement** > **Entity mapping**.
 
-22. For **Query scheduling** set the following:
+1. For **Query scheduling** set the following:
 
     |Setting|Value|
     |---|---|
@@ -281,13 +281,13 @@ In this task, you will create a detection for the second attack of the previous 
 
     >**Note:** We are purposely generating many incidents for the same data. This enables the Lab to use these alerts.
 
-23. Leave the rest of the options with the defaults. Select **Next: Incident settings >** button.
+1. Leave the rest of the options with the defaults. Select **Next: Incident settings >** button.
 
-24. For the *Incident settings* tab, leave the default values and select **Next: Automated response >** button.
+1. For the *Incident settings* tab, leave the default values and select **Next: Automated response >** button.
 
-25. On the **Automated response** tab under **Automation rules**, select **+ Add new**.
+1. On the **Automated response** tab under **Automation rules**, select **+ Add new**.
 
-26. Use the settings in the table to configure the automation rule.
+1. Use the settings in the table to configure the automation rule.
 
     |Setting|Value|
     |:----|:----|
@@ -298,11 +298,11 @@ In this task, you will create a detection for the second attack of the previous 
 
     >**Note:** You have already assigned permissions to the playbook, so it will be available.
 
-27. Select **Apply**
+1. Select **Apply**
 
-28. Select the **Next: Review + create >** button.
+1. Select the **Next: Review + create >** button.
   
-29. On the *Review and create* tab, select the **Save** button to create the new Scheduled Analytics rule.
+1. On the *Review and create* tab, select the **Save** button to create the new Scheduled Analytics rule.
 
 ## Conclusion
 

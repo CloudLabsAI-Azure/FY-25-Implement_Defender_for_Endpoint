@@ -51,13 +51,13 @@ When you investigate an incident, you'll see:
 
 1. Navigate back to the **Incidents** page, by selecting **Incidents**, under **Incidents & alerts**.
 
-2. Select the new incident named "**Execution incident on one endpoint**" to load its details. This opens the main page for the incident where you'll find the full attack story information and tabs for alerts, devices, users, investigations, and evidence. 
+1. Select the new incident named "**Execution incident on one endpoint**" to load its details. This opens the main page for the incident where you'll find the full attack story information and tabs for alerts, devices, users, investigations, and evidence. 
 
     ![Picture 1](media/L5-T2-S2.png) 
 
     >**Note:** Select **Close** on the **Execution incident on one endpoint**. 
 
-3. Here are the detailed information on the tabs:
+1. Here are the detailed information on the tabs:
 
     - **Attack story**
 
@@ -150,17 +150,17 @@ When you investigate an incident, you'll see:
 
         - Each of the analyzed entities is marked with a verdict (Malicious, Suspicious, Clean) and a remediation status. This helps you understand the remediation status of the entire incident and what next steps can be taken.
 
-4. To continue the investigation, select the **Alerts** tab, and select any one alert. It will open detailed information about the alert.               
+1. To continue the investigation, select the **Alerts** tab, and select any one alert. It will open detailed information about the alert.               
 
    ![Picture 1](media/L5-T2-S3.png)  
 
-5. On the alert page, under **Alert story** select any item in the process tree to open the side pane, it contains details like execution and file details including the hash, size and signer. Scroll down to the side pane to understand the number of times this file has been seen worldwide and in the organization. 
+1. On the alert page, under **Alert story** select any item in the process tree to open the side pane, it contains details like execution and file details including the hash, size and signer. Scroll down to the side pane to understand the number of times this file has been seen worldwide and in the organization. 
 
-6. Select **Open file page**, to drill into it and continue with the investigation. The file page provides incredible details about an executable file. 
+1. Select **Open file page**, to drill into it and continue with the investigation. The file page provides incredible details about an executable file. 
 
    ![Picture 1](media/filepage.png)
    
-7. The **Overview (1)** tab provides the same information as the file side pane did. 
+1. The **Overview (1)** tab provides the same information as the file side pane did. 
 
     - The **Incidents & alerts (2)** tab goes on to show all the alerts associated with this file. 
 
@@ -170,13 +170,13 @@ When you investigate an incident, you'll see:
 
         >**Note:** If the file is malicious, select **Stop and Quarantine File**, it will display the pop-up of the **Stop and Quarantine File**, provide a comment and select **Confirm**.
 
-8. Once, you are satisfied that you have dealt with the incident addressed the alerts linked to it and taken all required remediation actions, the step is to resolve it. To do that, select **Manage incident**
+1. Once, you are satisfied that you have dealt with the incident addressed the alerts linked to it and taken all required remediation actions, the step is to resolve it. To do that, select **Manage incident**
 
-9. Navigate back to the **Incident** page, on the **Attack story** tab, select the alert which you were investigating, and select **Manage alert**.
+1. Navigate back to the **Incident** page, on the **Attack story** tab, select the alert which you were investigating, and select **Manage alert**.
 
    ![Picture 1](media/manageincident.png)  
 
-10. On the **Manage alert** page, follow these instructions: select **Save**, and then close the alert page.
+1. On the **Manage alert** page, follow these instructions: select **Save**, and then close the alert page.
     
      |**Settings**|**Value**|
      |------------|---------|
@@ -191,13 +191,13 @@ In this task, Live response is crafted to bolster investigations, empowering you
 
 1. If you are not on the **Microsoft Defender** portal, open a new tab and go to (https://security.microsoft.com).
 
-2. On the **Microsoft Defender** portal, from the left-navigation menu select **Settings**, on the **Settings** page, select **Endpoints**. 
+1. On the **Microsoft Defender** portal, from the left-navigation menu select **Settings**, on the **Settings** page, select **Endpoints**. 
 
-3. Now, we will enable the **Live Response**, so that we can, run basic and advanced commands to do investigative work on a device. Download files such as malware samples and outcomes of PowerShell scripts. Download files in the background (new!).
+1. Now, we will enable the **Live Response**, so that we can, run basic and advanced commands to do investigative work on a device. Download files such as malware samples and outcomes of PowerShell scripts. Download files in the background (new!).
 Upload a PowerShell script or executable to the library and run it on a device from a tenant level.
 Take or undo remediation actions.
 
-4. On the **Endpoints** page, select **Advanced features (1)**, scroll down until you found the **Live Response** toggle. Now, follow these instructions, and choose **Save preferences (4)**:
+1. On the **Endpoints** page, select **Advanced features (1)**, scroll down until you found the **Live Response** toggle. Now, follow these instructions, and choose **Save preferences (4)**:
 
     |**Settings**|**Value**|
     |------------|---------|
@@ -206,11 +206,11 @@ Take or undo remediation actions.
 
      ![Picture 1](media/advancefeatures.png)
 
-5. From the left navigation menu, under **Assets**, select **Devices (1)**, and select the device (2) that you are using to generate the alerts and the incidents.
+1. From the left navigation menu, under **Assets**, select **Devices (1)**, and select the device (2) that you are using to generate the alerts and the incidents.
 
     ![Picture 1](media/device1.png)
 
-6. On the **Device** page, select **More actions (...) (1)**, and select **Initiate Live Response Session (2)**.
+1. On the **Device** page, select **More actions (...) (1)**, and select **Initiate Live Response Session (2)**.
 
     ![Picture 1](media/servervm.png)
 
@@ -218,7 +218,7 @@ Take or undo remediation actions.
 
     ![Picture 1](media/odluser.png)
 
-7. When you initiate a live response session on a device, a dashboard opens. The dashboard provides information about the session such as the following:
+1. When you initiate a live response session on a device, a dashboard opens. The dashboard provides information about the session such as the following:
 
    - Who created the session
    - When the session started
@@ -226,7 +226,7 @@ Take or undo remediation actions.
 
        ![Picture 1](media/sessionID.png)
 
-8. Now run the following commands:
+1. Now run the following commands:
 
     ```PowerShell
     connect
@@ -278,7 +278,7 @@ Take or undo remediation actions.
         Run <Filename>
         ```
 
-9. View the console help to learn about command parameters. To learn about an individual command, run:
+1. View the console help to learn about command parameters. To learn about an individual command, run:
 
      ```PowerShell
      help <command name>
@@ -286,7 +286,7 @@ Take or undo remediation actions.
 
      >**Note:** Replace **commandname** with the command for which you need help. 
 
-10. Select the **Command log** tab to see the commands used on the device during a session. Each command is tracked with full details such as:
+1. Select the **Command log** tab to see the commands used on the device during a session. Each command is tracked with full details such as:
 
      - ID
      - Command line

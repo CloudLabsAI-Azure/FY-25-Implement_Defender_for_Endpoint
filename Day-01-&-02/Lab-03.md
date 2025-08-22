@@ -227,3 +227,5 @@ In this lab, you have completed the following:
 - Validated the simulated attack by reviewing the phishing email in Outlook and confirming the simulated phishing landing page behavior upon clicking the malicious link.
 
 # Click Next to continue to the next lab. 
+
+   ![](media/gs-ed-p_0.png)

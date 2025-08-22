@@ -101,3 +101,5 @@ In this lab, you have completed the following:
 - Performed a detection test to verify device connectivity and Defender threat detection capability.
 
 ## Click Next to continue to the next lab.
+
+   ![](media/gs-ed-p_0.png)
