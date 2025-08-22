@@ -1,4 +1,6 @@
-# Lab 2 - Validating Endpoint Onboarding - Conducting a PowerShell Detection Test with Microsoft Defender for Endpoint
+# Lab 02 - Validating Endpoint Onboarding - Conducting a PowerShell Detection Test with Microsoft Defender for Endpoint
+
+### Estimated Duration: 60 Minutes
 
 ## Lab overview
 
@@ -93,7 +95,7 @@ In this task, run the following PowerShell script on a newly onboarded device to
    
 <validation step="f6505f87-21bb-4244-bc05-048c8875d90e" />
 
-## Summary
+## Review
 
 In this lab, you have completed the following:
 

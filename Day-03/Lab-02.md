@@ -1,5 +1,7 @@
 ## Exercise 2: Configure Detection Rules
 
+### Estimated Duration: 120 Minutes
+
 ## Lab scenario
 
 You are a Security Operations Analyst working at a company that implemented Microsoft Sentinel. You are going to work with Log Analytics KQL queries and from there, you will create custom analytics rules to help discover threats and anomalous behaviors in your environment.
@@ -7,6 +9,7 @@ You are a Security Operations Analyst working at a company that implemented Micr
 Analytics rules search for specific events or sets of events across your environment, alert you when certain event thresholds or conditions are reached, generate incidents for your SOC to triage and investigate, and respond to threats with automated tracking and reMediation processes.
 
 ## Lab objectives
+
  In this lab, you will Understand following:
 
 - Task 1: Playbook creation.
@@ -16,7 +19,7 @@ Analytics rules search for specific events or sets of events across your environ
 ### Task 1: Playbook Creation.
 In this task, you will create a playbook for next task.
 
-In the **Microsoft Defender portal**, under **Configuration (1)**, select **Automation (2)** to manage playbooks and automation rules.
+1. In the **Microsoft Defender portal**, under **Configuration (1)**, select **Automation (2)** to manage playbooks and automation rules.
 
    ![Lab overview.](media/gs-ed-p_22.png)
 
@@ -304,14 +307,23 @@ In this task, you will create a detection for the second attack of the previous 
   
 1. On the *Review and create* tab, select the **Save** button to create the new Scheduled Analytics rule.
 
-## Conclusion
-
- using Microsoft Sentinel and KQL queries allows you to create analytics rules that detect threats, streamline incident response, and automate remediation, helping to keep your 
- organization's environment secure.
-
 ## Review
+
 In this lab, you have completed the following:
+
 - Persistence Attack Detection
 - Privilege Elevation Attack Detection
+
+## Conclusion  
+
+Across these exercises, you have successfully:  
+
+- Created and configured a **Microsoft Sentinel workspace** to collect and analyze security events.  
+- Connected data sources such as **Windows Security Events** and **Azure Activity** to Sentinel.  
+- Built and customized **Sentinel workbooks** to visualize event data and gain insights into security activity.  
+- Created **playbooks** to automate incident responses and integrated them with analytics rules.  
+- Developed and tested **custom detection rules** for Persistence and Privilege Escalation attacks using KQL queries.  
+
+By completing this lab, you gained hands-on experience with Microsoft Sentinel’s end-to-end security operations workflow covering data ingestion, visualization, detection, and automated response. These skills will enable you to proactively detect threats, investigate suspicious activity, and respond faster to security incidents, ultimately strengthening your organization’s security posture.  
 
 ## You have successfully completed the lab.
