@@ -1,15 +1,19 @@
-# Lab 1 - Configure Sentinel Workbooks and Detection Rules
+## Exercise 01: Configure Sentinel Workbooks
 
-## Exercise 1: Configure Sentinel Workbooks
+### Estimated Duration: 120 Minutes
 
 ## Lab Overview
+
 Microsoft Sentinel allows you to create custom workbooks across your data and comes with built-in workbook templates to allow you to quickly gain insights across your data as soon as you connect a data source.
 
 ## Lab scenario
+
 You are a Security Operations Analyst working at a company that implemented Microsoft Sentinel. Once you have connected your data sources to Microsoft Sentinel, you can visualize and monitor the data using the Microsoft Sentinel adoption of Azure Monitor Workbooks, which provides versatility in creating custom dashboards. 
 
 ## Lab objectives 
+
  In this lab, you will Understand the following:
+
  - Task 1: Create Sentinel Workspace
  - Task 2: Connect the Windows security event connector
  - Task 3: Save and modify a workbook template
@@ -286,13 +290,14 @@ In this task, you will create a new workbook with advanced visualizations.
 
     ![Picture 1](media/ex-1-15.png) 
 
-### Conclusion
- Connecting data to Microsoft Sentinel enables you to monitor and visualize it using custom dashboards in Azure Monitor Workbooks, improving threat detection and response.
-
 ### Review
- In this lab, you will Understand following:
- - Saved and modify a workbook template
- - Created a Workbook
+
+In this lab, you performed the following:
+
+- Created a Microsoft Sentinel workspace.  
+- Connected the Windows Security Event connector.  
+- Saved and modified a workbook template.  
+- Created a custom workbook.  
 
 ## You have successfully completed the exercise. Click on Next to Continue
 

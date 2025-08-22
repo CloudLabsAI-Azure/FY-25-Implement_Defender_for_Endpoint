@@ -1,4 +1,6 @@
-# Lab 3- Endpoint Security and Attack Detection using Defender for Endpoint
+# Lab 03- Endpoint Security and Attack Detection using Defender for Endpoint
+
+### Estimated Duration: 60 Minutes
 
 ## Lab overview
 
@@ -219,7 +221,7 @@ In this task, validate the simulated Drive-by URL attack to assess the vulnerabi
 
 <validation step="c32e4131-9d5c-4e01-a4b6-5f006288ee1d" />   
 
-## Summary
+## Review
 
 In this lab, you have completed the following:
 

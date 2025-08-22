@@ -1,4 +1,6 @@
-# Lab 4 - Microsoft Defender for Endpoint Incidents Management and Analysis
+# Lab 04 - Microsoft Defender for Endpoint Incidents Management and Analysis
+
+### Estimated Duration: 60 Minutes
 
 ## Lab overview
 
@@ -302,11 +304,23 @@ Take or undo remediation actions.
 
 <validation step="92911dc0-fd28-49a5-8375-98f9589c6843" />
 
-## Summary 
+## Review 
 
 In this lab, you have completed the following:
 
 - Explored incidents and alerts within Microsoft Defender for Endpoint, reviewing generated alerts, incident details, and attack stories.
 - Performed investigation and response actions, including initiating Live Response sessions, running forensic commands, and managing remediation actions on compromised devices.
+
+# Conclusion  
+
+Across these labs, you have successfully gained hands-on experience with the core capabilities of **Microsoft Defender for Endpoint**. You:  
+
+- Set up and configured the Defender for Endpoint environment, including onboarding devices, creating device groups, and applying baseline security policies.  
+- Validated onboarding by running detection tests to confirm connectivity and verify endpoint reporting.  
+- Explored advanced security scenarios by simulating a Drive-by URL phishing attack and validating the results through Defender’s Attack Simulation Training.  
+- Investigated incidents and alerts end-to-end, using KQL queries, analytics rules, and automated playbooks to detect persistence and privilege escalation attacks.  
+- Leveraged Live Response to execute forensic commands, analyze devices in real time, and perform remediation actions.  
+
+By completing these exercises, you have built practical skills in **endpoint onboarding, threat simulation, detection, incident response, and automated remediation**. This end-to-end workflow reflects how Security Operations Analysts can strengthen organizational defenses, reduce risk exposure, and respond effectively to modern threats using Microsoft Defender XDR capabilities.  
 
 # You have successfully completed the lab.

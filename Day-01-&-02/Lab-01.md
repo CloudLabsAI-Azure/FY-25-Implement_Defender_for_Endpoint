@@ -1,4 +1,6 @@
-# Lab 1 - Setting up the Microsoft Defender for Endpoint Environment
+# Lab 01 - Setting up the Microsoft Defender for Endpoint Environment
+
+### Estimated Duration: 60 Minutes
 
 ## Lab overview
 
@@ -197,7 +199,7 @@ In this task, your objective is to implement the Windows Intune security baselin
    
 <validation step="55092f48-1e55-4402-9a71-887f7c82c36b" />  
 
-## Summary
+## Review
 
 In this lab, you have completed the following:
 
