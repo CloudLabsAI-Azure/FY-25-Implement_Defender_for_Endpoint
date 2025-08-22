@@ -206,3 +206,5 @@ In this lab, you have completed the following:
 - Applied security baselines via Microsoft Intune to enforce recommended security settings on Windows devices.
 
 ## Click Next to continue to the next lab.
+
+   ![](media/gs-ed-p_0.png)
