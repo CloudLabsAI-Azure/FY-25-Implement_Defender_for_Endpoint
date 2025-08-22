@@ -16,25 +16,31 @@ Analytics rules search for specific events or sets of events across your environ
 ### Task 1: Playbook Creation.
 In this task, you will create a playbook for next task.
 
-1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
+In the **Microsoft Defender portal**, under **Configuration (1)**, select **Automation (2)** to manage playbooks and automation rules.
 
-1. Select the Microsoft Sentinel Workspace you created earlier.
-
-1. Select the **Automation (1)** from the *Configuration* section, and select **Click here to go to the Defender portal (2)**. It will redirect you to the Defender portal.
-
-   ![Lab overview.](media/def-01.png)
+   ![Lab overview.](media/gs-ed-p_22.png)
 
 1. Click on **+ Create (1)** and select **Playbook with incident trigger (2)**.
 
     ![Lab overview.](media/def-02.png)
 
-1. Select the **sentinel-rg (1)** resource group and give playbook name **PostMessageTeams-OnIncident (2)**
+1. On the **Basics** page, configure the following settings:
 
-1. Select **Enable diagnostics logs in Log Analytics (3)** and select your workspace which is **sentinelworkspace (4)**.
+    - Select the **sentinel-rg (1)** resource group.  
+    - Enter the playbook name as **PostMessageTeams-OnIncident (2)**.  
+    - Select **Enable diagnostics logs in Log Analytics (3)**.  
+    - Choose the Log Analytics workspace **sentinelworkspace (4)**.  
+    - Click **Next: Connections > (5)**.  
 
-1. Click on **Next: Connections > (5)** then **Next: Review and Create**, and finally click on **Create Playbook** to continue to the designer.
+        ![Lab overview.](media/gs-ed-p_23.png)
 
-    ![Lab overview.](media/def-04.png)
+1. On the **Connections** page, keep the default **Connect with managed identity** option selected and click **Next: Review and create >**. 
+
+    ![Lab overview.](media/gs-ed-p_24.png)
+
+1. On the **Review and create** page, verify the configuration details and click **Create playbook** to deploy it. 
+
+    ![Lab overview.](media/gs-ed-p_25.png)
 
 ### Task 2: Persistence Attack Detection
 
@@ -48,12 +54,21 @@ In this task, you will create a detection for the first attack of the previous e
 
 1. Select **Logs** from the *General* section. Close the **Welcome to Log Analytics** and **Queries** tab.
 
+    ![Lab overview.](media/gs-ed-p_26.png)
+
+1. In the query editor, click the drop-down menu and change from **Simple mode** to **KQL mode**.
+
+    ![Lab overview.](media/gs-ed-p_27.png)
+
 1. We now know that the Threat Actor is using reg.exe to add keys to the Registry key and the program is located in C:\temp. **Run** the following statement to replace the *search* operator with the *where* operator in our query:
 
     ```KQL
     SecurityEvent 
     | where Activity startswith "4624" 
     ```
+
+    ![Lab overview.](media/gs-ed-p_28.png)
+
    ![Lab overview.](media/sc200ex7log.png)
 
 1. It is important to help the Security Operations Center Analyst by providing as much context about the alert as you can. This includes projecting Entities for use in the investigation graph. **Run** the following query:
@@ -64,9 +79,11 @@ In this task, you will create a detection for the first attack of the previous e
     | extend timestamp = TimeGenerated, HostCustomEntity = Computer, AccountCustomEntity = SubjectUserName
     ```
 
-1. Now that you have a good detection rule, in the Logs window, select the **+ New alert rule** in the command bar and then select **Create Microsoft Sentinel alert**. This will create a new Scheduled rule. **Hint:** You might need to select the ellipsis (...) button in the command bar.
+    ![Lab overview.](media/gs-ed-p_29.png)
 
-   ![Lab overview.](media/ex-1-19.png)
+1. In the query editor, click the **More options (1)** menu, select **New alert rule (2)**, and then choose **Create Microsoft Sentinel alert (3)**. 
+
+    ![Lab overview.](media/gs-ed-p_30.png)
 
 1. This starts the "Analytics rule wizard". For the *General* tab type:
 
@@ -76,6 +93,8 @@ In this task, you will create a detection for the first attack of the previous e
     |Description|Startup RegKey in c:\temp|
     |MITRE ATT&CK|Persistence|
     |Severity|High|
+
+    ![Lab overview.](media/gs-ed-p_31.png)
 
 1. Select **Next: Set rule logic >** button.
 
