@@ -294,4 +294,6 @@ In this task, you will create a new workbook with advanced visualizations.
  - Saved and modify a workbook template
  - Created a Workbook
 
-## Proceed to next Exercise
+## You have successfully completed the exercise. Click on Next to Continue
+
+![](media/gs-ed-p_0.png)
