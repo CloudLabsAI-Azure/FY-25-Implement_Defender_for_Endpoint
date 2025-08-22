@@ -61,75 +61,97 @@ In this task, you will create a Microsoft Sentinel workspace where you will be m
 
 ### Task 2: Connect the Windows security event connector
 
-1. In the Search bar of the Azure portal, type **Microsoft Sentinel (1)**, then select **Microsoft Sentinel (2)**.
+1. Open a browser and go to the **Microsoft Defender portal**: https://security.microsoft.com. **Sign in** using your lab credentials.
 
-    ![](media/09.png) 
+1. In the **Microsoft Defender** portal, select **Microsoft Sentinel (1)** from the left navigation menu. Expand **Content management (2)** and click **Content hub (3)**.
 
-1. Select the Sentinel workspace which you have created in the previous task **sentinelworkspace**.
+    ![Picture 1](media/gs-ed-p_3.png)
 
-    ![](media/log-022.png) 
+      > **Note:** If you are not able to see the **Content hub** load, it may take up to 10-15 minutes to complete.
 
-1. Navigate to the left menu and go to the Content Management section, select **Content Hub (1)**. On the Content Hub page, search and select **Windows Security Events (2)** and then **Select (3)** it. Finally, click on **Install (4)** and Follow the same steps to install **Azure Activity**.
+      > **Note:** If you are already able to see the **Content hub** load, it means the workspace is ready.
 
-    ![Picture 1](media/ex-1-3.png)
+1. On the **Content hub** page, type **Windows Security Events (1)** in the search bar and press **Enter**, then select **Windows Security Events (2)** from the results.  
 
-    ![Picture 1](media/ex-1-4u.png)  
+    ![Picture 1](media/gs-ed-p_4.png)
+
+1. On the **Windows Security Events** details page, review the description and available connectors, then click **Install** to add the solution.  
+
+    ![Picture 1](media/gs-ed-p_5.png)
+
+1. On the **Content hub** page, type **Azure Activity (1)** in the search bar and press **Enter**, then select **Azure Activity (2)** from the results and click **Install (3)** on the details pane. 
+
+    ![Picture 1](media/gs-ed-p_6.png)
 
 1. After receiving the notification of a successful installation, return to the **Data Connector** page and click on the **Refresh** button to ensure that the changes take effect.
 
-    ![Picture 1](media/ex-1-5.png)
+    ![Picture 1](media/gs-ed-p_7.png)
 
 1. You should observe three options: **Security Events Via Legacy Agent**, **Windows Security Event Via AMA** and **Azure Activity**
 
 1. Choose **Security Events Via Legacy Agent**, and then click on **Open connector page**.
 
-    ![Picture 1](media/ex-1-6.png) 
+    ![Picture 1](media/gs-ed-p_8.png) 
    
-1. In the configuration section, opt for **Install agent on Azure Windows Virtual Machine (1)**, and then choose **Download & Install agent for Azure Windows Virtual machines > (2)**.
+1. In the configuration section, opt for **Install Agent on Azure Windows Virtual Machine (1)**, and then choose **Download & Install Agent for Azure Windows Virtual Machines (2)**.
 
-    ![Picture 1](media/lab02-task01-installagent.png) 
+    ![Picture 1](media/t3_g_e2_7.png) 
 
 1. Select the **svm-<inject key="DeploymentID" enableCopy="false" />** virtual machine and click on **Connect**.
 
-    ![Picture 1](media/lab2-task1-svm.png) 
-        
-1. Once **Connected (1)**, select the **Virtual Machines (2)** link from the top.
+    ![Picture 1](media/t3_g_e2_8.png) 
 
-    ![Picture 1](media/lab2-task1-svm1.png) 
+1. On the virtual machine page, click **Connect** to link the VM to Log Analytics.
+
+    ![Picture 1](media/t3_g_e2_9.png)
+
+1. Select the **Virtual Machine** link from the top.
+
+    ![Picture 1](media/t3_g_e2_10.png)
 
 1. On the virtual machine page, select the **s2vm-<inject key="DeploymentID" enableCopy="false" />** virtual machine and click on **Connect**. Wait until get connected.
 
-    ![Picture 1](media/lab2-task1-s2vm.png)
+    ![Picture 1](media/t3_g_e2_11.png)
 
-1. Then, come back to the configuration and scroll down a bit. You can find **Select which events to stream**. Click on **All Events**. Click on **Apply changes** now. If you refresh the data connector page, you can see the status Connected for **Security Events Via Legacy Agent**.
+1. On the second virtual machine page, click **Connect** to link the VM to Log Analytics.
 
-    ![Picture 1](media/ex-1-7.png)
+    ![Picture 1](media/t3_g_e2_12.png)
 
-    ![Picture 1](media/ex-1-8.png)
+1. Select the **Virtual Machine** link from the top.
+
+    ![Picture 1](media/t3_g_e2_13.png)
+
+1. Verify that both virtual machines **s2vm-<inject key="DeploymentID" enableCopy="false" />** and **svm-<inject key="DeploymentID" enableCopy="false" />** display **This workspace (1)** under the **Log Analytics Connection** column, then click **Security Events via Legacy Agent (2)** in the breadcrumb to return to the connector page.
+
+    ![Picture 1](media/t3_g_e2_14.png)
+
+1. In the **Instructions** section, under **Select which events to stream**, choose **All Events (1)** and click **Apply changes (2)**.
+
+    ![Picture 1](media/t3_g_e2_15.png)
+
+1. On the **Data connectors** page, locate **Security Events via Legacy Agent** from the list and click **Refresh** if needed to update the status.  
+
+    ![Picture 1](media/gs-ed-p_9.png)      
+
+1. On the **Data connectors** page, verify that the status of **Security Events via Legacy Agent** is now shown as **Connected**.  
+
+    ![Picture 1](media/gs-ed-p_10.png)
 
 ### Task 3: Save and modify a workbook template
 
 In this task, you will save the Microsoft Sentinel workbook templates.
 
-1. In the Search bar of the Azure portal, type *Microsoft Sentinel*, then select **Microsoft Sentinel**.
+1. In the **Microsoft Defender portal**, under **Threat management (1)**, select **Workbooks (2)** and then click on **Azure Activity (3)** from the available templates.  
 
-    ![Picture 1](media/image_7.png)
-
-2. Select your Microsoft Sentinel Workspace.
-
-    ![Picture 1](media/log-022.png)
-
-3. Select **Workbooks (1)** under the *Threat Management* left blade, and select **Click here to go to the Defender portal (2)**. It will redirect you to the defender portal.
-
-    ![Picture 1](media/log090.png)
-
-4. Select the **Templates (1)** tab, search and select the **Azure Activity (2)** template workbook.
-
-    ![Picture 1](media/log100-01.png)
+    ![Picture 1](media/gs-ed-p_11.png)
 
 5. Scroll down again and select the **Save** button for the *Azure Activity* workbook. 
 
+    ![Picture 1](media/gs-ed-p_12.png)
+
 6. Leave **East US** as the default value for *Region* and select **Yes**.
+
+    ![Picture 1](media/gs-ed-p_13.png)
 
 7. Select the **View saved workbook** button.
 
@@ -140,6 +162,8 @@ In this task, you will save the Microsoft Sentinel workbook templates.
     ![Picture 1](media/log-10090.png)
 
 9. Select **Edit** in the command bar to enable changes in the workbook.
+
+    ![Picture 1](media/gs-ed-p_14.png)    
 
 10. Scroll down to the **Caller activities** area, and look at the color of the *Activities* column since we are going to format those columns. Select the **Edit** button below the grid and select the **ellipsis (...) > +Add > Add query**.
 
@@ -153,17 +177,23 @@ In this task, you will save the Microsoft Sentinel workbook templates.
 
         ![Picture 1](media/updateu.png)
    
-12. In the *Edit column settings* blade that appears, within *Columns* select **Activity (1)**.
+12. On the **Settings (1)** tab, scroll through the list of columns and select **Activity (Automatic) (2)** to include it in the workbook view.
 
-13. Change the value for *Column renderer* to **Heatmap (2)**. For *Colour palette*, scroll down to select **32-color categorical (3)**.
+    ![Picture 1](media/gs-ed-p_15.png)
 
-14. Select **Save and Close (4)**. Notice the change in the *Activities* column.
+13. On the **Edit column settings** page, change the **Column renderer (1)** to **Heatmap**, set the **Color palette (2)** to **32-color categorical**, and then click **Save and Close (3)** to apply the changes. 
 
-     ![Picture 1](media/ex-1-13.png)
+    ![Picture 1](media/gs-ed-p_16.png)
 
 15. Select **Done Editing** at the bottom of the query (not the top menu).
 
-16. Now select **Done Editing** at the top menu and select the **Save** icon. 
+    ![Picture 1](media/gs-ed-p_17.png)
+
+16. Now select **Done Editing** at the top menu and select the **Save** icon.
+
+    ![Picture 1](media/gs-ed-p_18.png)
+
+    ![Picture 1](media/gs-ed-p_19.png)
 
 17. Close the workbook by selecting the **X** in the top-right corner.
 
@@ -264,4 +294,6 @@ In this task, you will create a new workbook with advanced visualizations.
  - Saved and modify a workbook template
  - Created a Workbook
 
-## Proceed to next Exercise
+## You have successfully completed the exercise. Click on Next to Continue
+
+![](media/gs-ed-p_0.png)
